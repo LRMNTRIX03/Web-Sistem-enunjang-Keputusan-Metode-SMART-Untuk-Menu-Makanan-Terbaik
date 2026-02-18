@@ -9,7 +9,6 @@ Aplikasi ini cocok digunakan untuk kebutuhan restoran, katering, maupun studi ak
 * **Otentikasi Pengguna**
 
   * Login & logout
-  * Pembatasan akses fitur berdasarkan user
   * Keamanan data pengelolaan SPK
 
 * **Manajemen Kriteria**
@@ -63,7 +62,7 @@ Metode **SMART (Simple Multi Attribute Rating Technique)** digunakan untuk:
 **1. Clone project**
 ```bash
 git clone https://github.com/LRMNTRIX03/Web-Sistem-enunjang-Keputusan-Metode-SMART-Untuk-Menu-Makanan-Terbaik
-cd Web-Sistem-enunjang-Keputusan-Metode-SMART-Untuk-Menu-Makanan-Terbaik
+cd Web-Sistem-Penunjang-Keputusan-Metode-SMART-Untuk-Menu-Makanan-Terbaik
 ```
 **2. Copy env**
 ```bash
