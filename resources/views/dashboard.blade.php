@@ -40,10 +40,7 @@
         
 
     </div>
-    <span class="d-flex justify-between w-75">
-        <p>© 2025 Posyandu Remaja Mawar </p>
-        <p class="flex-end">©Razkya Dwi Ardanti</p>
-    </span>
+  
    
      
     

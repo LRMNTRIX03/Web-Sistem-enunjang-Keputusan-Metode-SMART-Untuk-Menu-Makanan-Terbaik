@@ -12,10 +12,7 @@
         
 
     </div>
-    <span class="d-flex justify-between w-75 text-white fw-bold">
-        <p>2025 © SPK SMART </p>
-        <p class="flex-end">©xxxxxx</p>
-    </span>
+  
    
      
     
