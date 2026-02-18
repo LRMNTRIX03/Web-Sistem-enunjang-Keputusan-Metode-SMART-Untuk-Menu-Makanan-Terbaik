@@ -1,66 +1,106 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistem Pendukung Keputusan (SPK) Pemilihan Menu Makanan Terbaik – Metode SMART
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Proyek ini merupakan aplikasi **Sistem Pendukung Keputusan (SPK)** untuk membantu menentukan **menu makanan terbaik** menggunakan metode **SMART (Simple Multi Attribute Rating Technique)**. Sistem dirancang untuk mempermudah proses penilaian dan pemilihan alternatif menu berdasarkan berbagai kriteria yang dapat disesuaikan.
 
-## About Laravel
+Aplikasi ini cocok digunakan untuk kebutuhan restoran, katering, maupun studi akademik yang membutuhkan proses pengambilan keputusan multikriteria secara terstruktur dan objektif.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Otentikasi Pengguna**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  * Login & logout
+  * Keamanan data pengelolaan SPK
 
-## Learning Laravel
+* **Manajemen Kriteria**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+  * Tambah, ubah, hapus kriteria penilaian
+  * Pengaturan bobot tiap kriteria
+  * Tipe kriteria (benefit / cost)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* **Manajemen Alternatif Menu**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+  * Input data alternatif menu makanan
+  * Kelola nilai alternatif terhadap setiap kriteria
+  * Relasi alternatif dengan kriteria
 
-## Laravel Sponsors
+* **Perhitungan Metode SMART**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+  * Normalisasi bobot kriteria
+  * Perhitungan nilai utilitas
+  * Perankingan otomatis alternatif
+  * Proses transparan dan terstruktur
 
-### Premium Partners
+* **Hasil Perhitungan**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+  * Tampilan ranking menu terbaik
+  * Detail skor setiap alternatif
+  * Ringkasan hasil keputusan
 
-## Contributing
+* **Export PDF**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+  * Export laporan hasil perhitungan
+  * Siap cetak
+  * Cocok untuk dokumentasi & pelaporan
 
-## Code of Conduct
+## Metode yang Digunakan
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Metode **SMART (Simple Multi Attribute Rating Technique)** digunakan untuk:
 
-## Security Vulnerabilities
+* Mengubah bobot kriteria menjadi bobot ternormalisasi
+* Menghitung nilai utilitas tiap alternatif
+* Menentukan skor akhir berdasarkan penjumlahan terbobot
+* Menghasilkan ranking menu terbaik
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Tujuan Proyek
 
-## License
+* Membantu pengambilan keputusan pemilihan menu makanan terbaik
+* Mengurangi subjektivitas dalam penilaian
+* Menyediakan sistem perhitungan yang konsisten dan dapat dipertanggungjawabkan
+* Menjadi contoh implementasi SPK metode SMART dalam aplikasi nyata
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Cara Penggunaan
+**1. Clone project**
+```bash
+git clone https://github.com/LRMNTRIX03/Web-Sistem-enunjang-Keputusan-Metode-SMART-Untuk-Menu-Makanan-Terbaik
+cd Web-Sistem-Penunjang-Keputusan-Metode-SMART-Untuk-Menu-Makanan-Terbaik
+```
+**2. Copy env**
+```bash
+copy .env.example .env
+```
+**3. Install Composer**
+```bash
+composer install
+```
+**4. Generate key**
+```bash
+php artisan key:generate
+```
+**5. Setup konfigurasi database**
+```php
+DB_CONNECTION=mysql
+DB_HOST=sesuaikan_host
+DB_PORT=sesuaikan_port
+DB_DATABASE=sesuaikan_nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+**6. Instal dependency node.js jika dibutuhkan**
+```php
+npm install
+```
+**7. Jalankan migrasi dan seeder**
+```bash
+php artisan migrate --seed
+```
+**7. Jalankan server**
+```bash
+php artisan serve
+```
+```bash
+npm run dev
+```
+
+---
+
+Silakan gunakan, modifikasi, dan kembangkan proyek ini sesuai kebutuhan.
