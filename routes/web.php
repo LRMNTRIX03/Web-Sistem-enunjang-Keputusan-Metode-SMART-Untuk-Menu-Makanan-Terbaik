@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [AuthController::class, 'index'])->name('login');
 Route::post('/auth', [AuthController::class, 'login'])->name('auth.login');
 Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
-    Route::post('data/password/reset', [AuthController::class, 'resetPassword'])->name('password.default');
 
 Route::middleware(('custom'))->group(function(){
     Route::get('dashboard', [DashboardController::class, 'index'])->name('user.dashboard');
@@ -46,8 +45,7 @@ Route::middleware(('custom'))->group(function(){
     //Export PDF
     Route::get('data/perhitungan/{id}/export-pdf', [PerhitunganController::class, 'exportPdf'])->name('perhitungan.export-pdf');
     //PasswordManagement
-    Route::get('data/password', [AuthController::class, 'PasswordView'])->name('password.index');
-    Route::post('data/password/update', [AuthController::class, 'ChangePassword'])->name('password.update');
+   
 
     
     

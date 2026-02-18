@@ -60,15 +60,6 @@
                     
                 </div>
             </form>
-            <div class="mt-3 d-flex align-items-center justify-content-center">
-    <form action="{{ route('password.default') }}" method="post">
-        @csrf
-        <button type="submit" class="btn btn-primary d-flex w-100 align-items-center justify-content-center">
-            <i class="fa-solid fa-key text-xl"></i> 
-            <h5 class="mt-2 mx-3 fw-bold">Reset Password</h5>
-        </button>
-    </form>
-</div>
         </div>
     </section>
 </main>

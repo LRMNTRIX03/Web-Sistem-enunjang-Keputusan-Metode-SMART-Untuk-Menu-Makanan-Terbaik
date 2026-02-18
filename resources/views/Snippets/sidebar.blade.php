@@ -42,12 +42,6 @@
 
             </li>
             </a>
-            <a href="{{ route('password.index') }}" class="text-decoration-none text-white fw-bold gap-2 d-flex hover:opacity-50 hover:bg-red-800 rounded transition-all duration-200 ease-in-out @if(request()->is('data/password*')) active bg-red-800  @endif)">
-            <li class="side-item mb-3">
-                    <i class="fa-solid fa-list me-2"></i> Ganti Password
-
-            </li>
-            </a>
         </ul>
 
         <div class="logout-container text-center mt-3">
